@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import cls from "./style.module.scss"
 import Image from 'next/image';
 import { useSpring, animated } from 'react-spring';
@@ -56,28 +56,31 @@ const bottomItems: ItemProps[] = [
     { image: "/39.jpg" },
 ]
 
+
+
+
 const Portfolio: React.FC<PortfolioProps> = () => {
 
     const { t } = useTranslation()
 
     const propsSection1 = useSpring({
         loop: true,
-        config: { duration: 25000 },
+        config: { duration: 15000 },
         to: async (next) => {
             while (true) {
-                await next({ transform: 'translateX(-150%)' });
-                await next({ transform: 'translateX(150%)' });
+                await next({ transform: 'translateX(-100%)' });
+                await next({ transform: 'translateX(100%)' });
             }
         },
     });
 
     const propsSection2 = useSpring({
         loop: true,
-        config: { duration: 25000 },
+        config: { duration: 15000 },
         to: async (next) => {
             while (true) {
-                await next({ transform: 'translateX(150%)' });
-                await next({ transform: 'translateX(-150%)' });
+                await next({ transform: 'translateX(100%)' });
+                await next({ transform: 'translateX(-100%)' });
             }
         },
     });
