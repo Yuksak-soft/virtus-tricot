@@ -13,7 +13,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
 
     const propsSection1 = useSpring({
         loop: true,
-        config: { duration: 10000 },
+        config: { duration: 20000 },
         to: async (next) => {
             while (true) {
                 await next({ transform: 'translateX(-100%)' });
@@ -24,7 +24,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
 
     const propsSection2 = useSpring({
         loop: true,
-        config: { duration: 10000 },
+        config: { duration: 20000 },
         to: async (next) => {
             while (true) {
                 await next({ transform: 'translateX(100%)' });
