@@ -26,13 +26,13 @@ const Footer: React.FC<FooterProps> = () => {
             </div>
             <div className={cls.right}>
                 <div className={cls.socialIcons}>
-                    <Link href="#">
+                    <Link href="https://www.facebook.com/virtustricotltd/">
                         <Image src="/facebook-footer.svg" alt='facebook' width={25} height={25} />
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.youtube.com/@virtustricot5715/">
                         <Image src="/youtube-footer.svg" alt='youtube' width={25} height={25} />
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.instagram.com/virtustricot.uz/">
                         <Image src="/instagram-footer.svg" alt='instagram' width={25} height={25} />
                     </Link>
                 </div>

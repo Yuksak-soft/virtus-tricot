@@ -36,9 +36,15 @@ const Navbar: React.FC<NavbarProps> = () => {
             <div className={cls.left}>
                 <Image src="/logo.svg" alt='logo' width={118} height={50} />
                 <div className={cls.icons}>
-                    <Image src="/facebook.svg" alt='instagram' width={24} height={24} />
-                    <Image src="/youtube.svg" alt='instagram' width={24} height={24} />
-                    <Image src="/instagram.svg" alt='instagram' width={24} height={24} />
+                    <Link href="https://www.facebook.com/virtustricotltd/">
+                        <Image src="/facebook.svg" alt='instagram' width={24} height={24} />
+                    </Link>
+                    <Link href="https://www.youtube.com/@virtustricot5715/">
+                        <Image src="/youtube.svg" alt='instagram' width={24} height={24} />
+                    </Link>
+                    <Link href="https://www.instagram.com/virtustricot.uz/">
+                        <Image src="/instagram.svg" alt='instagram' width={24} height={24} />
+                    </Link>
                 </div>
             </div>
             <div className={cls.right}>
