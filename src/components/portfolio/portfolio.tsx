@@ -1,14 +1,18 @@
+"use client";
 import React from 'react';
 import cls from "./style.module.scss"
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 interface PortfolioProps { }
 
 const Portfolio: React.FC<PortfolioProps> = () => {
 
+    const { t } = useTranslation()
+
 
     return <div className={cls.wrapper}>
-        <h1>Портфолио</h1>
+        <h1>{t("portfolio")}</h1>
         <div className={cls.products}>
             <div className={cls.section1}>
                 <Image src="/1.svg" alt='item' width={340} height={200} />

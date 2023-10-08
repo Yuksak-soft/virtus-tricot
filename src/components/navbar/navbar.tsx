@@ -6,6 +6,7 @@ import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import { translationsRu, translationsUz } from "../../i18n/i18n";
 import { Select } from 'antd';
+import Link from 'next/link';
 
 interface NavbarProps { }
 
@@ -56,10 +57,12 @@ const Navbar: React.FC<NavbarProps> = () => {
                         ]}
                     />
                 </div>
-                <button className={cls.navbarBtn}>
-                    <Image src="/phone.svg" alt='phone' width={18} height={18} />
-                    (71) 500-78-88
-                </button>
+                <Link style={{ textDecoration: "none" }} href="tel: +998715007888">
+                    <button className={cls.navbarBtn}>
+                        <Image src="/phone.svg" alt='phone' width={18} height={18} />
+                        (71) 500-78-88
+                    </button>
+                </Link>
             </div>
         </div>
     )

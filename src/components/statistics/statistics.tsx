@@ -1,5 +1,7 @@
+"use client";
 import React from 'react';
 import cls from "./style.module.scss"
+import { useTranslation } from 'react-i18next';
 
 interface StatisticsProps { }
 
@@ -12,35 +14,37 @@ interface ItemsProps {
 
 const Statistics: React.FC<StatisticsProps> = () => {
 
+    const { t } = useTranslation()
+
     const items: ItemsProps[] = [
         {
             count: 10,
-            text: "иностранные квалифицированнные специалистов"
+            text: t("statisticTextOne")
         },
         {
             count: 15,
-            text: "лет опыта  изготовлении текстилного аксессуары"
+            text: t("statisticTextTwo")
         },
         {
             count: 1000,
-            text: "клиенты экспортёр клиентов"
+            text: t("statisticTextThree")
         },
         {
             count: 3000,
-            text: "довольных клиентов"
+            text: t("statisticTextFour")
         },
         {
             count: "5000",
-            text: "место для производство",
+            text: t("statisticTextFive"),
             degree: "м2"
         },
         {
             count: "10.000",
-            text: "видоа аксессуаров"
+            text: t("statisticTextSix")
         },
         {
             count: "600.000",
-            text: "выполненных заказов каждый год",
+            text: t("statisticTextSeven"),
             degree: "кг"
         },
     ]

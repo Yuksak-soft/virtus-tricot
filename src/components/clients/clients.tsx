@@ -1,21 +1,20 @@
+"use client"
 import React from 'react';
 import cls from "./style.module.scss"
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 interface ClientsProps { }
 
 const Clients: React.FC<ClientsProps> = () => {
 
+    const { t } = useTranslation()
+
     return <div className={cls.wrapper}>
         <div className={cls.title}>
-            <h1>Наши клиенты которые доверябт нам</h1>
+            <h1>{t("clients")}</h1>
             <div className={cls.line}></div>
-            <p>Для нас главный показатель качества работы является доверие клиентов.
-                Мы ценим своих клиентов и гордимся темб что они выбрали именно нашу компания для
-                длительного сотрудничестваю Доверительные отношения с нашими партнёрами позволяют
-                нам решать самые сложные задача в сжатые сроки. В первую очередь, наши клиенты - это
-                наши пратнёры и друзья, мы ценим каждого нашего партнёра, и стараемся ежедневно
-                улучшать наш сервис услуг!</p>
+            <p>{t("clientsText")}</p>
         </div>
         <div className={cls.brands}>
             <div className={cls.sectionTop}>

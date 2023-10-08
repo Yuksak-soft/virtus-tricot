@@ -1,11 +1,15 @@
+"use client";
 import React from 'react';
 import cls from "./style.module.scss"
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 interface FooterProps { }
 
 const Footer: React.FC<FooterProps> = () => {
+
+    const { t } = useTranslation()
 
 
     return <div className={cls.wrapper}>
@@ -18,7 +22,7 @@ const Footer: React.FC<FooterProps> = () => {
 
         <div className={cls.footerBottom}>
             <div className={cls.left}>
-                <p>© 2023: Barcha huquqlar himoylangan</p>
+                <p>© 2023: {t("footerText")}</p>
             </div>
             <div className={cls.right}>
                 <div className={cls.socialIcons}>
