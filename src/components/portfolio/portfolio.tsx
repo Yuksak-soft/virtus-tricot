@@ -1,8 +1,8 @@
 "use client";
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import cls from "./style.module.scss"
 import Image from 'next/image';
-import { useSpring, animated } from 'react-spring';
+import anime from 'animejs';
 import { useTranslation } from 'react-i18next';
 
 interface PortfolioProps { }
@@ -62,50 +62,65 @@ const bottomItems: ItemProps[] = [
 const Portfolio: React.FC<PortfolioProps> = () => {
 
     const { t } = useTranslation()
+    const section1Ref = useRef(null);
+    const section2Ref = useRef(null);
 
-    const propsSection1 = useSpring({
-        loop: true,
-        config: { duration: 15000 },
-        to: async (next) => {
-            while (true) {
-                await next({ transform: 'translateX(-100%)' });
-                await next({ transform: 'translateX(100%)' });
-            }
-        },
-    });
+    useEffect(() => {
+        const animateSection1 = () => {
+            anime({
+                targets: section1Ref.current,
+                translateX: ['0%', '100%'],
+                easing: 'easeInOutQuad',
+                duration: 15000,
+                direction: 'alternate',
+                loop: true,
+            });
+        };
 
-    const propsSection2 = useSpring({
-        loop: true,
-        config: { duration: 15000 },
-        to: async (next) => {
-            while (true) {
-                await next({ transform: 'translateX(100%)' });
-                await next({ transform: 'translateX(-100%)' });
-            }
-        },
-    });
+        const animateSection2 = () => {
+            anime({
+                targets: section2Ref.current,
+                translateX: ['0%', '-100%'],
+                easing: 'easeInOutQuad',
+                duration: 15000,
+                direction: 'alternate',
+                loop: true,
+            });
+        };
+
+        animateSection1();
+        animateSection2();
+
+        return () => {
+            anime({
+                targets: [section1Ref.current, section2Ref.current],
+                translateX: '0%',
+                duration: 0,
+            });
+        };
+    }, []);
 
 
     return <div className={cls.wrapper}>
         <h1>{t("portfolio")}</h1>
         <div className={cls.centerLine}></div>
         <div className={cls.products}>
-            <animated.div style={propsSection2} className={cls.section1}>
+            <div ref={section1Ref} className={cls.section1}>
                 {topItems.map(item => (
                     <React.Fragment key={item.image}>
                         <Image src={item.image} alt='item' width={400} height={200} />
                         <div className={cls.line}></div>
                     </React.Fragment>
                 ))}
-            </animated.div>
-            <animated.div style={propsSection1} className={cls.section2}>
+            </div>
+            <div ref={section2Ref} className={cls.section2}>
                 {bottomItems.map(item => (
                     <React.Fragment key={item.image}>
                         <Image src={item.image} alt='item' width={400} height={200} />
                         <div className={cls.line}></div>
                     </React.Fragment>
                 ))}
-            </animated.div>
+            </div>
         </div>
 
     </div>
