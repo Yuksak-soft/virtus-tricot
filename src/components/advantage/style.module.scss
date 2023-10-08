@@ -46,6 +46,11 @@
           border-right: 3.5px solid #b8010c;
           border-bottom: 3.5px solid #b8010c;
         }
+        transition: all 0.2s linear;
+
+        &:hover {
+          transform: scale(0.94);
+        }
       }
 
       .item2 {
