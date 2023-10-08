@@ -2,14 +2,30 @@
 import React from 'react';
 import cls from "./style.module.scss"
 import Image from 'next/image';
+import i18n from "i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
+import { translationsRu, translationsUz } from "../../i18n/i18n";
 import { Select } from 'antd';
 
 interface NavbarProps { }
 
+i18n.use(initReactI18next).init({
+    resources: {
+        uz: { translation: translationsUz },
+        ru: { translation: translationsRu },
+    },
+    lng: "uz",
+    fallbackLng: "uz",
+    interpolation: { escapeValue: false },
+});
+
+
 const Navbar: React.FC<NavbarProps> = () => {
 
+    const { t, i18n } = useTranslation();
+
     const handleChange = (value: string) => {
-        console.log(`selected ${value}`);
+        i18n.changeLanguage(value)
     };
 
 
@@ -29,15 +45,17 @@ const Navbar: React.FC<NavbarProps> = () => {
                     <Image src="/location.svg" alt='location' width={20} height={20} />
                     <p>Usa, San Fransisco, St22</p>
                 </div>
-                <Select
-                    defaultValue="uz"
-                    style={{ width: 70 }}
-                    onChange={handleChange}
-                    options={[
-                        { value: 'uz', label: 'uz' },
-                        { value: 'ru', label: 'ru' },
-                    ]}
-                />
+                <div className={cls.selectWrap}>
+                    <Select
+                        defaultValue="uz"
+                        style={{ width: 100 }}
+                        onChange={handleChange}
+                        options={[
+                            { value: 'uz', label: "uz" },
+                            { value: 'ru', label: 'ru' },
+                        ]}
+                    />
+                </div>
                 <button className={cls.navbarBtn}>
                     <Image src="/phone.svg" alt='phone' width={18} height={18} />
                     (71) 500-78-88
