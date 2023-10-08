@@ -1,0 +1,71 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .line {
+      height: 4.5px;
+      width: 120px;
+      background-color: red;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 28px;
+    }
+  }
+
+  .brands {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .section,
+    .sectionTop {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .brandWrap {
+        position: relative;
+        height: 140px;
+        width: 140px;
+      }
+    }
+
+    .sectionTop {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .section,
+    .sectionTop {
+      .line {
+        width: 1px;
+        height: 200px;
+        background-color: #ddd;
+      }
+    }
+
+    .section {
+    }
+  }
+}

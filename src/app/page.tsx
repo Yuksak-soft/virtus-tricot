@@ -5,6 +5,7 @@ import Banner from '@/components/banner/banner';
 import Statistics from '@/components/statistics/statistics';
 import Portfolio from '@/components/portfolio/portfolio';
 import Advantage from '@/components/advantage/advantage';
+import Clients from '@/components/clients/clients';
 
 interface PageProps { }
 
@@ -18,6 +19,7 @@ const Page: React.FC<PageProps> = () => {
       <Statistics />
       <Portfolio />
       <Advantage />
+      <Clients />
     </div>
   )
 

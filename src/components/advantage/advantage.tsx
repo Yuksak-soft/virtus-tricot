@@ -57,7 +57,7 @@ const Advantage: React.FC<AdvantageProps> = () => {
                     </div>
                     <div className={cls.item}>
                         <div className={cls.imgWrap}>
-                            <Image src="/advantage6.svg" alt='advantage' width={39} height={39} />
+                            <Image src="/advantage7.svg" alt='advantage' width={39} height={39} />
                         </div>
                         <p>Удобная и быстрая
                             доставка</p>
