@@ -15,10 +15,6 @@ const Form: React.FC<FormProps> = () => {
     })
 
 
-
-
-
-
     const handleInputVal = () => {
         setInputVal({ ...inputVal, name: "", phone: "" })
     }

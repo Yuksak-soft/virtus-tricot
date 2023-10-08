@@ -7,6 +7,7 @@ import Portfolio from '@/components/portfolio/portfolio';
 import Advantage from '@/components/advantage/advantage';
 import Clients from '@/components/clients/clients';
 import Footer from '@/components/footer/footer';
+import Location from '@/components/location/location';
 
 interface PageProps { }
 
@@ -21,6 +22,7 @@ const Page: React.FC<PageProps> = () => {
       <Portfolio />
       <Advantage />
       <Clients />
+      <Location />
       <Footer />
     </div>
   )
