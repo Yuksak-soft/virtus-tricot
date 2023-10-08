@@ -1,0 +1,47 @@
+.wrapper {
+  padding: 1.5rem 1.1rem 2rem 1.1rem;
+  background: #ffffff40;
+  backdrop-filter: blur(10px);
+  border-radius: 3px;
+  width: 330px;
+  text-align: center;
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 28.8px;
+    color: #fff;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input {
+      padding: 10px;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      &::placeholder {
+        color: #c7c6c6;
+      }
+    }
+
+    button {
+      background-color: #e30613;
+      border: 1px solid #c20000;
+      color: #fff;
+      padding: 10px;
+      margin-top: 2rem;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.2s linear;
+      font-size: 18px;
+      line-height: 18px;
+
+      &:hover {
+        background-color: #f10d1c;
+      }
+    }
+  }
+}
