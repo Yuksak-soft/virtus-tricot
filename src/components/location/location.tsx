@@ -8,14 +8,14 @@ interface LocationProps { }
 const Location: React.FC<LocationProps> = () => {
 
     const defaultState = {
-        center: [55.751574, 37.573856],
-        zoom: 10,
+        center: [41.2555236, 69.2418187],
+        zoom: 12,
     };
 
     return <div className={cls.wrapper}>
         <YMaps>
             <Map style={{ width: "100vw", height: "400px" }} defaultState={defaultState}>
-                <Placemark geometry={[55.684758, 37.738521]} />
+                <Placemark geometry={[41.2555236, 69.2418187]} />
             </Map>
         </YMaps>
     </div>
