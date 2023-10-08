@@ -7,6 +7,7 @@ interface StatisticsProps { }
 interface ItemsProps {
     count: number | string;
     text: string;
+    degree?: string;
 }
 
 const Statistics: React.FC<StatisticsProps> = () => {
@@ -29,16 +30,18 @@ const Statistics: React.FC<StatisticsProps> = () => {
             text: "довольных клиентов"
         },
         {
-            count: "5000 м2",
-            text: "место для производство"
+            count: "5000",
+            text: "место для производство",
+            degree: "м2"
         },
         {
             count: "10.000",
             text: "видоа аксессуаров"
         },
         {
-            count: "600.000 кг",
-            text: "выполненных заказов каждый год"
+            count: "600.000",
+            text: "выполненных заказов каждый год",
+            degree: "кг"
         },
     ]
 
@@ -47,7 +50,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
             {
                 items.map(item => (
                     <div className={cls.item}>
-                        <h1>{item.count}</h1>
+                        <h1>{item.count} <sub style={{ fontSize: 25 }}>{item.degree}</sub></h1>
                         <p>{item.text}</p>
                     </div>
                 ))
