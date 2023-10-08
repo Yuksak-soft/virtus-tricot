@@ -53,7 +53,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
         <div className={cls.wrapper}>
             {
                 items.map(item => (
-                    <div className={cls.item}>
+                    <div key={item.text} className={cls.item}>
                         <h1>{item.count} <sub style={{ fontSize: 25 }}>{item.degree}</sub></h1>
                         <p>{item.text}</p>
                     </div>
