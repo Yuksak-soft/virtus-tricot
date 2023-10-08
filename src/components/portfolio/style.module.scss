@@ -35,6 +35,7 @@
       justify-content: flex-end;
       align-items: flex-end;
       padding: 0 2rem;
+      gap: 5px;
       padding-bottom: 25px;
 
       .line {
@@ -50,6 +51,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       padding: 0 2rem;
+      gap: 5px;
       padding-bottom: 25px;
 
       .line {
@@ -59,5 +61,10 @@
         margin-top: 30px;
       }
     }
+  }
+
+  img {
+    min-width: 250px !important;
+    padding: 20px;
   }
 }
