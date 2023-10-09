@@ -23,7 +23,9 @@ export const translationsUz = {
     advantage8: "Biz belgilangan muddatlarga rioya qilishni kafolatlaymiz",
     clients: "Bizga ishonadigan mijozlarimiz",
     clientsText: "Biz uchun ish sifatining asosiy ko'rsatkichi mijozlarning ishonchidir. Biz mijozlarimizni qadrlaymiz va ular bizning kompaniyamizni uzoq muddatli hamkorlik uchun tanlaganidan faxrlanamiz.Hamkorlarimiz bilan ishonchli munosabatlar bizga eng murakkab muammolarni qisqa vaqt ichida hal qilish imkonini beradi. Avvalo, bizning mijozlarimiz bizning hamkorlarimiz va do'stlarimizdir, biz har bir hamkorimizni qadrlaymiz va har kuni xizmatimizni yaxshilashga harakat qilamiz!",
-    footerText: "Barcha huquqlar himoylangan"
+    footerText: "Barcha huquqlar himoylangan",
+
+    address:"Toshkent Sh. Oltin Vodiy, 60"
 
 };
 
@@ -52,5 +54,7 @@ export const translationsRu = {
     advantage8: "Гарантируем соблюдение сроков",
     clients: "Наши клиенты которые доверябт нам",
     clientsText: "Для нас главный показатель качества работы является доверие клиентов. Мы ценим своих клиентов и гордимся темб что они выбрали именно нашу компания для длительного сотрудничестваю Доверительные отношения с нашими партнёрами позволяют нам решать самые сложные задача в сжатые сроки. В первую очередь, наши клиенты - это наши пратнёры и друзья, мы ценим каждого нашего партнёра, и стараемся ежедневно улучшать наш сервис услуг!",
-    footerText: "Все права защищены"
+    footerText: "Все права защищены",
+
+    address:"Г. Ташкент, Золотая Долина, 60"
 };

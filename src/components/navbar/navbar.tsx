@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             <div className={cls.right}>
                 <div className={cls.location}>
                     <Image src="/location.svg" alt='location' width={20} height={20} />
-                    <p>Usa, San Fransisco, St22</p>
+                    <p>{t("address")}</p>
                 </div>
                 <div className={cls.selectWrap}>
                     <Select

@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = () => {
         <a className={cls.phoneNumber} href="tel: +998715007888">(71) 500-78-88</a>
         <p>
             <Image src="/footer-location.svg" alt='location' width={20} height={20} />
-            Usa, San Fransisco, St22
+            {t("address")}
         </p>
         <div className={cls.socialIcons}>
             <Link href="https://www.facebook.com/virtustricotltd/">
