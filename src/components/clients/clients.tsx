@@ -19,7 +19,7 @@ const Clients: React.FC<ClientsProps> = () => {
         <div className={cls.brands}>
             <div className={cls.sectionTop}>
                 <div className={cls.brandWrap}>
-                    <Image src="/brand1.svg" alt="brand" fill />
+                    <Image src="/brand1.jpg" alt="brand" fill />
                 </div>
                 <div className={cls.line}></div>
                 <div className={cls.brandWrap}>
@@ -40,11 +40,11 @@ const Clients: React.FC<ClientsProps> = () => {
             </div>
             <div className={cls.section}>
                 <div className={cls.brandWrap}>
-                    <Image src="/brand6.svg" alt="brand" fill />
+                    <Image src="/brand6.jpg" alt="brand" fill />
                 </div>
                 <div className={cls.line}></div>
                 <div className={cls.brandWrap}>
-                    <Image src="/brand7.svg" alt="brand" fill />
+                    <Image src="/brand7.jpg" alt="brand" fill />
                 </div>
                 <div className={cls.line}></div>
                 <div className={cls.brandWrap}>
