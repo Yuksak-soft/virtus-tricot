@@ -69,10 +69,10 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         const animateSection1 = () => {
             anime({
                 targets: section1Ref.current,
-                translateX: ['0%', '100%'],
-                easing: 'easeInOutQuad',
-                duration: 15000,
-                direction: 'alternate',
+                translateX: '100%', // Faqat bitta yo'nalish
+                easing: 'linear',
+                duration: 20000,
+                // direction: 'alternate',
                 loop: true,
             });
         };
@@ -80,10 +80,10 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         const animateSection2 = () => {
             anime({
                 targets: section2Ref.current,
-                translateX: ['0%', '-100%'],
-                easing: 'easeInOutQuad',
-                duration: 15000,
-                direction: 'alternate',
+                translateX: '-100%', // Faqat bitta yo'nalish
+                easing: 'linear',
+                duration: 20000,
+                // direction: 'alternate',
                 loop: true,
             });
         };
@@ -92,6 +92,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         animateSection2();
 
         return () => {
+            // Ilova yopilganda animatsiyalarni to'xtatish
             anime({
                 targets: [section1Ref.current, section2Ref.current],
                 translateX: '0%',
@@ -99,7 +100,6 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             });
         };
     }, []);
-
 
     return <div className={cls.wrapper}>
         <h1>{t("portfolio")}</h1>

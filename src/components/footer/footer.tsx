@@ -4,6 +4,8 @@ import cls from "./style.module.scss"
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 interface FooterProps { }
 
@@ -27,13 +29,18 @@ const Footer: React.FC<FooterProps> = () => {
             <div className={cls.right}>
                 <div className={cls.socialIcons}>
                     <Link href="https://www.facebook.com/virtustricotltd/">
-                        <Image src="/facebook-footer.svg" alt='facebook' width={25} height={25} />
+                        <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                        ></FontAwesomeIcon>
                     </Link>
+
+
                     <Link href="https://www.youtube.com/@virtustricot5715/">
-                        <Image src="/youtube-footer.svg" alt='youtube' width={25} height={25} />
+                        <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                        ></FontAwesomeIcon>
                     </Link>
                     <Link href="https://www.instagram.com/virtustricot.uz/">
-                        <Image src="/instagram-footer.svg" alt='instagram' width={25} height={25} />
+                        <FontAwesomeIcon icon={faInstagram} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                        ></FontAwesomeIcon>
                     </Link>
                 </div>
             </div>

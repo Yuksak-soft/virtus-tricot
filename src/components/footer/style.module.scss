@@ -45,3 +45,11 @@
     }
   }
 }
+
+.faIcon {
+  transition: all 0.2s linear;
+  color: #fff;
+  &:hover {
+    color: #f10d1c;
+  }
+}

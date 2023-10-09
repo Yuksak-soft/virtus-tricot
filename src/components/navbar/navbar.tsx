@@ -7,6 +7,8 @@ import { useTranslation, initReactI18next } from "react-i18next";
 import { translationsRu, translationsUz } from "../../i18n/i18n";
 import { Select } from 'antd';
 import Link from 'next/link';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 interface NavbarProps { }
 
@@ -37,13 +39,18 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <Image src="/logo.svg" alt='logo' width={118} height={50} />
                 <div className={cls.icons}>
                     <Link href="https://www.facebook.com/virtustricotltd/">
-                        <Image src="/facebook.svg" alt='instagram' width={24} height={24} />
+                        <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                        ></FontAwesomeIcon>
                     </Link>
+
+
                     <Link href="https://www.youtube.com/@virtustricot5715/">
-                        <Image src="/youtube.svg" alt='instagram' width={24} height={24} />
+                        <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                        ></FontAwesomeIcon>
                     </Link>
                     <Link href="https://www.instagram.com/virtustricot.uz/">
-                        <Image src="/instagram.svg" alt='instagram' width={24} height={24} />
+                        <FontAwesomeIcon icon={faInstagram} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                        ></FontAwesomeIcon>
                     </Link>
                 </div>
             </div>
