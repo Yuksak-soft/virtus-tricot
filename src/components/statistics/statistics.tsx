@@ -54,7 +54,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
             {
                 items.map(item => (
                     <div key={item.text} className={cls.item}>
-                        <h1>{item.count} <sub style={{ fontSize: 25 }}>{item.degree}</sub></h1>
+                        <h1>{item.count} <span style={{ fontSize: 20 }}>{item.degree}</span></h1>
                         <p>{item.text}</p>
                     </div>
                 ))
