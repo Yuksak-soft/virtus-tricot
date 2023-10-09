@@ -5,6 +5,7 @@
   align-items: center;
   transform: translateY(-30px);
   position: relative;
+  overflow: hidden;
 
   .centerLine {
     width: 100%;
@@ -66,5 +67,24 @@
   img {
     min-width: 250px !important;
     padding: 20px;
+  }
+
+  @media (max-width: 991px) {
+    transform: translateY(-100px);
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    .centerLine {
+      margin-top: 22%;
+    }
+
+    .products {
+      padding: 10px;
+      .section2 {
+        padding-bottom: 10px;
+      }
+    }
   }
 }

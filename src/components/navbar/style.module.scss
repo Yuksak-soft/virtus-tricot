@@ -29,6 +29,12 @@
     align-items: center;
     justify-content: space-between;
 
+    .selectWrap {
+      .mediaPhoneIcon {
+        display: none;
+      }
+    }
+
     .location {
       display: flex;
       align-items: center;
@@ -55,6 +61,51 @@
 
       &:hover {
         background-color: #f10d1c;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      .icons {
+        display: none;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-direction: row-reverse;
+      .location {
+        img {
+          cursor: pointer;
+          display: none;
+        }
+        p {
+          display: none;
+        }
+      }
+
+      .navbarBtn {
+        display: none;
+      }
+
+      .selectWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        .mediaPhoneIcon {
+          display: block;
+          color: #505050;
+        }
       }
     }
   }

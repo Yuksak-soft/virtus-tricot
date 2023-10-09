@@ -21,6 +21,20 @@ const Footer: React.FC<FooterProps> = () => {
             <Image src="/footer-location.svg" alt='location' width={20} height={20} />
             Usa, San Fransisco, St22
         </p>
+        <div className={cls.socialIcons}>
+            <Link href="https://www.facebook.com/virtustricotltd/">
+                <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                ></FontAwesomeIcon>
+            </Link>
+            <Link href="https://www.youtube.com/@virtustricot5715/">
+                <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                ></FontAwesomeIcon>
+            </Link>
+            <Link href="https://www.instagram.com/virtustricot.uz/">
+                <FontAwesomeIcon icon={faInstagram} className={cls.faIcon} style={{ width: 24, height: 24 }}
+                ></FontAwesomeIcon>
+            </Link>
+        </div>
 
         <div className={cls.footerBottom}>
             <div className={cls.left}>
@@ -32,8 +46,6 @@ const Footer: React.FC<FooterProps> = () => {
                         <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
                         ></FontAwesomeIcon>
                     </Link>
-
-
                     <Link href="https://www.youtube.com/@virtustricot5715/">
                         <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
                         ></FontAwesomeIcon>

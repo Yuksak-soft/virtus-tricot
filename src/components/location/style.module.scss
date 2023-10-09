@@ -1,4 +1,8 @@
 .wrapper {
   width: 100%;
   transform: translateY(150px);
+
+  @media (max-width: 991px) {
+    transform: translateY(50px);
+  }
 }

@@ -60,6 +60,20 @@ const Clients: React.FC<ClientsProps> = () => {
                 </div>
             </div>
         </div>
+
+        <div className={cls.mediaBrands}>
+            <div className={cls.centerLine}></div>
+            <Image src="/brand1.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand2.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand3.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand4.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand5.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand6.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand7.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand8.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand9.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand10.svg" alt="brand" width={130} height={130} />
+        </div>
     </div>
 
 }

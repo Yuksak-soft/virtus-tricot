@@ -11,3 +11,13 @@ body {
     overflow-x: hidden;
     font-family: 'Casper', sans-serif;
 }
+
+.ant-modal .ant-modal-content {
+    background-color: transparent !important;
+}
+
+.anticon svg {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}

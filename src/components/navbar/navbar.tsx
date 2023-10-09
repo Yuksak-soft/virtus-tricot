@@ -9,6 +9,7 @@ import { Select } from 'antd';
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 interface NavbarProps { }
 
@@ -69,6 +70,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                             { value: 'ru', label: 'ru' },
                         ]}
                     />
+                    <Link style={{ textDecoration: "none" }} className={cls.mediaPhoneIcon} href="tel: +998715007888">
+                        <FontAwesomeIcon icon={faPhone} width={18} height={18} />
+                    </Link>
                 </div>
                 <Link style={{ textDecoration: "none" }} href="tel: +998715007888">
                     <button className={cls.navbarBtn}>

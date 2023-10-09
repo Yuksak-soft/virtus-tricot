@@ -8,6 +8,10 @@
   background-color: #1d1d1b;
   padding-top: 25px;
 
+  .socialIcons {
+    display: none;
+  }
+
   .phoneNumber {
     font-size: 2rem;
     text-decoration: none;
@@ -41,6 +45,34 @@
         display: flex;
         align-items: center;
         gap: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    margin-top: 50px;
+
+    .phoneNumber {
+      font-size: 1.8rem;
+    }
+
+    .socialIcons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footerBottom {
+      margin-top: 30px;
+      padding: 10px;
+      justify-content: center;
+      .left {
+        text-align: center;
+        padding: 0;
+      }
+
+      .right {
+        display: none;
       }
     }
   }
