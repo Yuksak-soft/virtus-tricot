@@ -2,12 +2,13 @@
 import React from 'react';
 import cls from "./style.module.scss"
 import { useTranslation } from 'react-i18next';
+import CountUp from 'react-countup';
 
 interface StatisticsProps { }
 
 
 interface ItemsProps {
-    count: number | string;
+    count: number | string | any;
     text: string;
     degree?: string;
     line?: boolean
@@ -19,32 +20,32 @@ const Statistics: React.FC<StatisticsProps> = () => {
 
     const items: ItemsProps[] = [
         {
-            count: 10,
+            count: <CountUp duration={6} start={0} end={10} />,
             text: t("statisticTextOne")
         },
         {
-            count: 15,
+            count: <CountUp duration={6} start={0} end={15} />,
             text: t("statisticTextTwo")
         },
         {
-            count: 1000,
+            count: <CountUp duration={6} start={0} end={1000} />,
             text: t("statisticTextThree")
         },
         {
-            count: 3000,
+            count: <CountUp duration={6} start={0} end={3000} />,
             text: t("statisticTextFour")
         },
         {
-            count: "5000",
+            count: <CountUp duration={6} start={0} end={5000} />,
             text: t("statisticTextFive"),
             degree: "м2"
         },
         {
-            count: "10.000",
+            count: <CountUp start={0} end={10000} />,
             text: t("statisticTextSix")
         },
         {
-            count: "600.000",
+            count: <CountUp start={0} end={600000} />,
             text: t("statisticTextSeven"),
             degree: "кг"
         },
@@ -52,22 +53,22 @@ const Statistics: React.FC<StatisticsProps> = () => {
 
     const topItems: ItemsProps[] = [
         {
-            count: 10,
+            count: <CountUp duration={6} start={0} end={10} />,
             text: t("statisticTextOne"),
             line: true
         },
         {
-            count: 15,
+            count: <CountUp duration={6} start={0} end={15} />,
             text: t("statisticTextTwo"),
             line: true
         },
         {
-            count: 1000,
+            count: <CountUp duration={6} start={0} end={1000} />,
             text: t("statisticTextThree"),
             line: true
         },
         {
-            count: 3000,
+            count: <CountUp duration={6} start={0} end={3000} />,
             text: t("statisticTextFour"),
             line: false
         },
@@ -75,18 +76,18 @@ const Statistics: React.FC<StatisticsProps> = () => {
 
     const bottomItems: ItemsProps[] = [
         {
-            count: "5000",
+            count: <CountUp duration={6} start={0} end={5000} />,
             text: t("statisticTextFive"),
             degree: "м2",
             line: true
         },
         {
-            count: "10.000",
+            count: <CountUp duration={6} start={0} end={10000} />,
             text: t("statisticTextSix"),
             line: true
         },
         {
-            count: "600.000",
+            count: <CountUp duration={6} start={0} end={600000} />,
             text: t("statisticTextSeven"),
             degree: "кг",
             line: false
