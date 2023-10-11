@@ -37,6 +37,18 @@ const Clients: React.FC<ClientsProps> = () => {
                 <div className={cls.brandWrap}>
                     <Image src="/brand5.svg" alt="brand" fill />
                 </div>
+                <div className={cls.line}></div>
+                <div className={cls.brandWrap}>
+                    <Image src="/brand11.jpg" alt="brand" fill />
+                </div>
+                <div className={cls.line}></div>
+                <div className={cls.brandWrap}>
+                    <Image src="/brand12.jpg" alt="brand" fill />
+                </div>
+                <div className={cls.line}></div>
+                <div className={cls.brandWrap}>
+                    <Image src="/brand13.jpg" alt="brand" fill />
+                </div>
             </div>
             <div className={cls.section}>
                 <div className={cls.brandWrap}>
@@ -58,6 +70,18 @@ const Clients: React.FC<ClientsProps> = () => {
                 <div className={cls.brandWrap}>
                     <Image src="/brand10.svg" alt="brand" fill />
                 </div>
+                <div className={cls.line}></div>
+                <div className={cls.brandWrap}>
+                    <Image src="/brand14.jpg" alt="brand" fill />
+                </div>
+                <div className={cls.line}></div>
+                <div className={cls.brandWrap}>
+                    <Image src="/brand15.jpg" alt="brand" fill />
+                </div>
+                <div className={cls.line}></div>
+                <div className={cls.brandWrap}>
+                    <Image src="/brand16.jpg" alt="brand" fill />
+                </div>
             </div>
         </div>
 
@@ -73,6 +97,12 @@ const Clients: React.FC<ClientsProps> = () => {
             <Image src="/brand8.svg" alt="brand" width={130} height={130} />
             <Image src="/brand9.svg" alt="brand" width={130} height={130} />
             <Image src="/brand10.svg" alt="brand" width={130} height={130} />
+            <Image src="/brand11.jpg" alt="brand" width={130} height={130} />
+            <Image src="/brand12.jpg" alt="brand" width={130} height={130} />
+            <Image src="/brand13.jpg" alt="brand" width={130} height={130} />
+            <Image src="/brand14.jpg" alt="brand" width={130} height={130} />
+            <Image src="/brand15.jpg" alt="brand" width={130} height={130} />
+            <Image src="/brand16.jpg" alt="brand" width={130} height={130} />
         </div>
     </div>
 

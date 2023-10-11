@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  gap: 50px;
   align-items: center;
   padding: 0.8rem 6rem;
   justify-content: center;
@@ -13,11 +14,25 @@
   .left {
     text-align: start;
     h1 {
-      font-size: 2.8rem;
-      width: 75%;
+      font-size: 3.2rem;
       color: #fff;
-      line-height: 64px;
+      line-height: 55px;
       font-weight: 600;
+      margin-top: 25px;
+    }
+
+    .images {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      border-top: 1px solid #cecece;
+      border-bottom: 1px solid #cecece;
+
+      .line {
+        width: 1px;
+        height: 110px;
+        background-color: #cecece;
+      }
     }
   }
 
@@ -31,6 +46,7 @@
     margin: 0 auto;
     width: 100vw;
     padding: 0;
+    gap: 0;
     text-align: center;
     overflow: hidden;
     .left {
@@ -38,8 +54,13 @@
       text-align: center;
       margin-top: 10%;
 
+      .images {
+        display: none;
+      }
+
       h1 {
         font-size: 2.2rem;
+        width: 70%;
         line-height: 50px;
         margin: 0 auto;
         padding: 10px 0;

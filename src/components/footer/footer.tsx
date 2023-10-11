@@ -22,17 +22,17 @@ const Footer: React.FC<FooterProps> = () => {
             {t("address")}
         </p>
         <div className={cls.socialIcons}>
-            <Link href="https://www.facebook.com/virtustricotltd/">
-                <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                ></FontAwesomeIcon>
+            <Link href="https://www.instagram.com/virtustricot.uz/">
+                <Image src="/instagram.png" alt='instagram' width={24} height={24} />
             </Link>
             <Link href="https://www.youtube.com/@virtustricot5715/">
-                <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                ></FontAwesomeIcon>
+                <Image src="/youtube.png" alt='youtube' width={24} height={24} />
             </Link>
-            <Link href="https://www.instagram.com/virtustricot.uz/">
-                <FontAwesomeIcon icon={faInstagram} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                ></FontAwesomeIcon>
+            <Link href="https://t.me/gendirector_virtustricot">
+                <Image src="/telegram.png" alt='telegram' width={24} height={24} />
+            </Link>
+            <Link href="https://www.facebook.com/virtustricotltd/">
+                <Image src="/facebook.png" alt='facebook' width={24} height={24} />
             </Link>
         </div>
 
@@ -42,17 +42,17 @@ const Footer: React.FC<FooterProps> = () => {
             </div>
             <div className={cls.right}>
                 <div className={cls.socialIcons}>
-                    <Link href="https://www.facebook.com/virtustricotltd/">
-                        <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
+                    <Link href="https://www.instagram.com/virtustricot.uz/">
+                        <Image src="/instagram.png" alt='instagram' width={24} height={24} />
                     </Link>
                     <Link href="https://www.youtube.com/@virtustricot5715/">
-                        <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
+                        <Image src="/youtube.png" alt='youtube' width={24} height={24} />
                     </Link>
-                    <Link href="https://www.instagram.com/virtustricot.uz/">
-                        <FontAwesomeIcon icon={faInstagram} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
+                    <Link href="https://t.me/gendirector_virtustricot">
+                        <Image src="/telegram.png" alt='telegram' width={24} height={24} />
+                    </Link>
+                    <Link href="https://www.facebook.com/virtustricotltd/">
+                        <Image src="/facebook.png" alt='facebook' width={24} height={24} />
                     </Link>
                 </div>
             </div>

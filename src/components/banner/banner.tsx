@@ -8,6 +8,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link';
 import { Button, Modal } from 'antd';
+import Image from 'next/image';
 
 interface BannerProps { }
 
@@ -33,6 +34,15 @@ const Banner: React.FC<BannerProps> = () => {
     return (
         <div className={cls.wrapper}>
             <div className={cls.left}>
+                <div className={cls.images}>
+                    <Image src="/banner1.svg" alt='banner 1' width={200} height={200} />
+                    <div className={cls.line}></div>
+                    <Image src="/banner2.svg" alt='banner 2' width={200} height={200} />
+                    <div className={cls.line}></div>
+                    <Image src="/banner3.svg" alt='banner 3' width={200} height={200} />
+                    <div className={cls.line}></div>
+                    <Image src="/banner4.svg" alt='banner 4' width={200} height={200} />
+                </div>
                 <h1>{t("bannerText")}</h1>
             </div>
             <div className={cls.right}>
@@ -46,17 +56,17 @@ const Banner: React.FC<BannerProps> = () => {
             <div className={cls.btnWrap}>
                 <button onClick={showModal}><FontAwesomeIcon icon={faPhone} width={18} height={18} /> Связать</button>
                 <div className={cls.icons}>
-                    <Link href="https://www.facebook.com/virtustricotltd/">
-                        <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
+                    <Link href="https://www.instagram.com/virtustricot.uz/">
+                        <Image src="/instagram.png" alt='instagram' width={24} height={24} />
                     </Link>
                     <Link href="https://www.youtube.com/@virtustricot5715/">
-                        <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
+                        <Image src="/youtube.png" alt='youtube' width={24} height={24} />
                     </Link>
-                    <Link href="https://www.instagram.com/virtustricot.uz/">
-                        <FontAwesomeIcon icon={faInstagram} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
+                    <Link href="https://t.me/gendirector_virtustricot">
+                        <Image src="/telegram.png" alt='telegram' width={24} height={24} />
+                    </Link>
+                    <Link href="https://www.facebook.com/virtustricotltd/">
+                        <Image src="/facebook.png" alt='facebook' width={24} height={24} />
                     </Link>
                 </div>
             </div>

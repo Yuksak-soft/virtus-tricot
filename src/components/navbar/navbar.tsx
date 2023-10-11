@@ -18,8 +18,8 @@ i18n.use(initReactI18next).init({
         uz: { translation: translationsUz },
         ru: { translation: translationsRu },
     },
-    lng: "uz",
-    fallbackLng: "uz",
+    lng: "ru",
+    fallbackLng: "ru",
     interpolation: { escapeValue: false },
 });
 
@@ -39,19 +39,17 @@ const Navbar: React.FC<NavbarProps> = () => {
             <div className={cls.left}>
                 <Image src="/logo.svg" alt='logo' width={118} height={50} />
                 <div className={cls.icons}>
-                    <Link href="https://www.facebook.com/virtustricotltd/">
-                        <FontAwesomeIcon icon={faFacebook} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
-                    </Link>
-
-
-                    <Link href="https://www.youtube.com/@virtustricot5715/">
-                        <FontAwesomeIcon icon={faYoutube} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
-                    </Link>
                     <Link href="https://www.instagram.com/virtustricot.uz/">
-                        <FontAwesomeIcon icon={faInstagram} className={cls.faIcon} style={{ width: 24, height: 24 }}
-                        ></FontAwesomeIcon>
+                        <Image src="/instagram.png" alt='instagram' width={30} height={30} />
+                    </Link>
+                    <Link href="https://www.youtube.com/@virtustricot5715/">
+                        <Image src="/youtube.png" alt='youtube' width={30} height={30} />
+                    </Link>
+                    <Link href="https://t.me/gendirector_virtustricot">
+                        <Image src="/telegram.png" alt='telegram' width={24} height={24} />
+                    </Link>
+                    <Link href="https://www.facebook.com/virtustricotltd/">
+                        <Image src="/facebook.png" alt='facebook' width={24} height={24} />
                     </Link>
                 </div>
             </div>
@@ -62,12 +60,13 @@ const Navbar: React.FC<NavbarProps> = () => {
                 </div>
                 <div className={cls.selectWrap}>
                     <Select
-                        defaultValue="uz"
-                        style={{ width: 100 }}
+                        defaultValue="ru"
+                        className={cls.languageSelector}
+                        style={{ width: 65, }}
                         onChange={handleChange}
                         options={[
-                            { value: 'uz', label: "uz" },
-                            { value: 'ru', label: 'ru' },
+                            { value: 'uz', label: <span style={{ fontSize: 20 }}>🇺🇿</span> },
+                            { value: 'ru', label: <span style={{ fontSize: 20 }}>🇷🇺</span> },
                         ]}
                     />
                     <Link style={{ textDecoration: "none" }} className={cls.mediaPhoneIcon} href="tel: +998715007888">

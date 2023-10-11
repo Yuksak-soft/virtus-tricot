@@ -44,8 +44,10 @@ const Form: React.FC<FormProps> = () => {
     return <div className={cls.wrapper}>
         <h1>{t("formTitle")}</h1>
         <div className={cls.inputs}>
-            <input type="text" onChange={(e) => setInputVal({ ...inputVal, name: e.target.value })} value={inputVal.name} placeholder={t("name")} name="name" id="name" />
-            <input type="text" onChange={(e) => setInputVal({ ...inputVal, phone: e.target.value })} value={inputVal.phone} placeholder={t("phoneNumber")} name="phone" id="phone" />
+            <div className={cls.inputWrap}>
+                <input type="text" onChange={(e) => setInputVal({ ...inputVal, name: e.target.value })} value={inputVal.name} placeholder={t("name")} name="name" id="name" />
+                <input type="text" onChange={(e) => setInputVal({ ...inputVal, phone: e.target.value })} value={inputVal.phone} placeholder={t("phoneNumber")} name="phone" id="phone" />
+            </div>
             <button onClick={sendMessage}>{t("send")}</button>
         </div>
     </div>
