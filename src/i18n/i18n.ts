@@ -16,7 +16,7 @@ export const translationsUz = {
     advantage1: "Har bir mijozga individual yondashuv",
     advantage2: "Yuqori darajadagi ishlab chiqarish",
     advantage3: "Qulay narxlar",
-    advantage4: "Biz asosan orqaga qaytarish tizimida ishlamaymiz.",
+    advantage4: "Biz asosan sovgʻalarsiz (otkat olmasdan ishlash) tizimida ishlaymiz",
     advantage5: "Malakali mutaxassislarning professional jamoasi",
     advantage6: "Zo‘r sifat",
     advantage7: "Qulay va tez yetkazib berish",
