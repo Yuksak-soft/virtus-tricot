@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     return (
         <div className={cls.wrapper}>
             <div className={cls.left}>
-                <Image src="/logo.svg" alt='logo' width={118} height={50} />
+                <Image src="/logo.png" alt='logo' width={100} height={40} />
                 <div className={cls.icons}>
                     <Link href="https://www.instagram.com/virtustricot.uz/">
                         <Image src="/instagram.png" alt='instagram' width={30} height={30} />
@@ -55,8 +55,10 @@ const Navbar: React.FC<NavbarProps> = () => {
             </div>
             <div className={cls.right}>
                 <div className={cls.location}>
-                    <Image src="/location.svg" alt='location' width={20} height={20} />
-                    <p>{t("address")}</p>
+                    <Link className={cls.locationLink} href="https://yandex.com/maps/org/53361172391/?ll=69.250939%2C41.256332&z=15.88">
+                        <Image src="/location.svg" alt='location' width={20} height={20} />
+                        <p>{t("address")}</p>
+                    </Link>
                 </div>
                 <div className={cls.selectWrap}>
                     <Select

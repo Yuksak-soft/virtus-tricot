@@ -34,15 +34,6 @@ const Banner: React.FC<BannerProps> = () => {
     return (
         <div className={cls.wrapper}>
             <div className={cls.left}>
-                <div className={cls.images}>
-                    <Image src="/banner1.png" alt='banner 1' width={200} height={200} />
-                    <div className={cls.line}></div>
-                    <Image src="/banner2.png" alt='banner 2' width={200} height={200} />
-                    <div className={cls.line}></div>
-                    <Image src="/banner3.png" alt='banner 3' width={200} height={200} />
-                    <div className={cls.line}></div>
-                    <Image src="/banner4.png" alt='banner 4' width={200} height={200} />
-                </div>
                 <h1>{t("bannerText")}</h1>
             </div>
             <div className={cls.right}>

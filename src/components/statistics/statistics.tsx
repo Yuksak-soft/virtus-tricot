@@ -20,32 +20,32 @@ const Statistics: React.FC<StatisticsProps> = () => {
 
     const items: ItemsProps[] = [
         {
-            count: <CountUp duration={6} start={0} end={10} />,
+            count: <CountUp duration={6} start={0} separator="" decimals={0} end={10} />,
             text: t("statisticTextOne")
         },
         {
-            count: <CountUp duration={6} start={0} end={15} />,
+            count: <CountUp duration={6} start={0} separator="" decimals={0} end={15} />,
             text: t("statisticTextTwo")
         },
         {
-            count: <CountUp duration={6} start={0} end={1000} />,
+            count: <CountUp duration={6} start={0} separator="" decimals={0} end={1000} />,
             text: t("statisticTextThree")
         },
         {
-            count: <CountUp duration={6} start={0} end={3000} />,
+            count: <CountUp duration={6} start={0} separator="" decimals={0} end={3000} />,
             text: t("statisticTextFour")
         },
         {
-            count: <CountUp duration={6} start={0} end={5000} />,
+            count: <CountUp duration={6} start={0} separator="" decimals={0} end={5000} />,
             text: t("statisticTextFive"),
             degree: "м2"
         },
         {
-            count: <CountUp start={0} end={10000} />,
+            count: <CountUp start={0} end={10000} separator="" decimals={0} />,
             text: t("statisticTextSix")
         },
         {
-            count: <CountUp start={0} end={600000} />,
+            count: <CountUp start={0} end={600000} separator="" decimals={0} />,
             text: t("statisticTextSeven"),
             degree: "кг"
         },

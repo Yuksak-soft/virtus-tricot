@@ -1,20 +1,77 @@
 .wrapper {
-  background-image: url("/bg.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/bg1.png");
   height: 600px;
-  width: 88vw;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  width: 88vw;
   gap: 50px;
   align-items: center;
   padding: 0.8rem 6rem;
   justify-content: center;
   overflow: hidden;
+  animation: image 20s infinite alternate;
+
+  @keyframes image {
+    0% {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/bg2.png");
+    }
+    20% {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/bg3.png");
+    }
+    40% {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/bg4.png");
+    }
+    60% {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/bg5.png");
+    }
+    80% {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/bg6.png");
+    }
+    100% {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("/bg7.png");
+    }
+  }
 
   .left {
     text-align: start;
     h1 {
-      font-size: 3.2rem;
+      font-size: 3.4rem;
       color: #fff;
       line-height: 55px;
       font-weight: 600;
@@ -34,6 +91,12 @@
         background-color: #cecece;
       }
     }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .btnWrap {
