@@ -62,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     <Select
                         defaultValue="ru"
                         className={cls.languageSelector}
-                        style={{ width: 75, }}
+                        style={{ width: 60, }}
                         onChange={handleChange}
                         options={[
                             { value: 'uz', label: <span style={{ fontSize: 20 }}>🇺🇿</span> },
