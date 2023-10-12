@@ -37,6 +37,7 @@ const topItems: ItemProps[] = [
     { image: "/43.jpg" },
     { image: "/44.jpg" },
     { image: "/45.jpg" },
+    { image: "/51.JPG" },
 ];
 
 const bottomItems: ItemProps[] = [
