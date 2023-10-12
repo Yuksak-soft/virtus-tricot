@@ -39,11 +39,6 @@ body {
     align-items: center !important;
 }
 
-.ant-select-selection-item {
-    overflow: auto !important;
-    text-overflow: inherit !important;
-    margin-left: 13px !important;
-}
 
 .ant-select-arrow {
     display: none !important;
