@@ -26,7 +26,7 @@ const Form: React.FC<FormProps> = () => {
                 `https://api.telegram.org/bot6425829985:AAHRoe4aR4g1WXU8PKSI56lcRMhDthmnr5c/sendMessage?chat_id=-1001687085192&text=${texts}`
             );
             Swal.fire(
-                "Mutahassislarimiz siz bilan tez orada bog'lanishadi.",
+                "Подтверждено",
                 "",
                 "success"
             );
@@ -34,8 +34,8 @@ const Form: React.FC<FormProps> = () => {
         } catch (err) {
             Swal.fire({
                 icon: "error",
-                title: "Xatolik...",
-                text: "Internet ulanganligini tekshirib, qayta urinib ko'ring.",
+                title: "Ошибка...",
+                text: "Попробуйте еще раз.",
             });
         }
     };
