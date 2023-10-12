@@ -4,7 +4,7 @@ export const translationsUz = {
     name: "Ism",
     phoneNumber: "Telefon raqami",
     send: "Jo‘natish",
-    mobie_send:"Biz bilan bog'laning",
+    mobie_send: "Biz bilan bog'laning",
     statisticTextOne: "Xorijiy malakali mutaxassislar",
     statisticTextTwo: "Yillik tajriba ",
     statisticTextThree: "Export qiluvchi mijozlar",
@@ -26,7 +26,7 @@ export const translationsUz = {
     clientsText: "Biz uchun ish sifatining asosiy ko‘rsatkichi mijozlarning ishonchidir. Biz mijozlarimizni qadrlaymiz va ular bizning kompaniyamizni uzoq muddatli hamkorlik uchun tanlaganidan faxrlanamiz.Hamkorlarimiz bilan ishonchli munosabatlar bizga eng murakkab muammolarni qisqa vaqt ichida hal qilish imkonini beradi. Avvalo, bizning mijozlarimiz bizning hamkorlarimiz va do‘stlarimizdir, biz har bir hamkorimizni qadrlaymiz va har kuni xizmatimizni yaxshilashga harakat qilamiz!",
     footerText: "Barcha huquqlar himoylangan",
 
-    address:"Toshkent Sh. Oltin Vodiy, 60"
+    address: "Toshkent Sh. Oltin Vodiy, 60"
 
 };
 
@@ -36,14 +36,14 @@ export const translationsRu = {
     name: "Имя",
     phoneNumber: "Телефон номер",
     send: "Отправить",
-    mobie_send:"Связаться",
-    statisticTextOne: "иностранных квалификацированных специалистов",
-    statisticTextTwo: "лет опыта в изготовлении текстильного аксессуара",
-    statisticTextThree: "поставок для экспортных клиентов",
-    statisticTextFour: "довольных клиентов",
-    statisticTextFive: "места для производства",
-    statisticTextSix: "видов аксессуаров",
-    statisticTextSeven: "выполненных заказов каждый год",
+    mobie_send: "Связаться",
+    statisticTextOne: "Иностранных квалификацированных специалистов",
+    statisticTextTwo: "Лет опыта в изготовлении текстильного аксессуара",
+    statisticTextThree: "Поставок для экспортных клиентов",
+    statisticTextFour: "Довольных клиентов",
+    statisticTextFive: "Места для производства",
+    statisticTextSix: "Видов аксессуаров",
+    statisticTextSeven: "Выполненных заказов каждый год",
     portfolio: "Портфолио",
     advantages: "Наши преимущества",
     advantage1: "Индивидуальный подход к клиенту",
@@ -54,9 +54,9 @@ export const translationsRu = {
     advantage6: "Отличное качество",
     advantage7: "Удобная и быстрая доставка",
     advantage8: "Гарантируем соблюдение сроков",
-    clients: "Наши клиенты которые доверяют нам",
+    clients: "Наши клиенты которые доверят нам",
     clientsText: "Для нас главный показатель качества работы является доверие клиентов. Мы ценим своих клиентов и гордимся тем что они выбрали именно нашу компанию для длительного сотрудничества. Доверительные отношения с нашими партнёрами позволяют нам решать самые сложные задачи в сжатые сроки. В первую очередь наши клиенты - это наши партнёры и друзья, мы ценим каждого нашего партнёра и стараемся ежедневно улучшать наш сервис услуг !",
     footerText: "Все права защищены",
 
-    address:"Г. Ташкент, Золотая Долина, 60"
+    address: "Г. Ташкент, Золотая Долина, 60"
 };

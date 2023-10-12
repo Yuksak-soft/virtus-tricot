@@ -45,7 +45,7 @@ const Banner: React.FC<BannerProps> = () => {
                 </div>
             </Modal>
             <div className={cls.btnWrap}>
-                <button onClick={showModal}><FontAwesomeIcon icon={faPhone} width={18} height={18} /> Связать</button>
+                <button onClick={showModal}><FontAwesomeIcon icon={faPhone} width={18} height={18} /> {t("mobie_send")}</button>
                 <div className={cls.icons}>
                     <Link href="https://www.instagram.com/virtustricot.uz/">
                         <Image src="/instagram.png" alt='instagram' width={24} height={24} />

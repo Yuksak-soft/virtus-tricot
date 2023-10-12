@@ -5,6 +5,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Greenwich";
+    src: url('../fonts/greenwich/Greenwich-Bold.otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+
 body {
     margin: 0;
     padding: 0;

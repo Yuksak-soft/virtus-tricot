@@ -53,22 +53,22 @@ const Statistics: React.FC<StatisticsProps> = () => {
 
     const topItems: ItemsProps[] = [
         {
-            count: <CountUp duration={6} start={0} end={10} />,
+            count: <CountUp duration={6} separator="" decimals={0} start={0} end={10} />,
             text: t("statisticTextOne"),
             line: true
         },
         {
-            count: <CountUp duration={6} start={0} end={15} />,
+            count: <CountUp duration={6} separator="" decimals={0} start={0} end={15} />,
             text: t("statisticTextTwo"),
             line: true
         },
         {
-            count: <CountUp duration={6} start={0} end={1000} />,
+            count: <CountUp duration={6} separator="" decimals={0} start={0} end={1000} />,
             text: t("statisticTextThree"),
             line: true
         },
         {
-            count: <CountUp duration={6} start={0} end={3000} />,
+            count: <CountUp duration={6} separator="" decimals={0} start={0} end={3000} />,
             text: t("statisticTextFour"),
             line: false
         },
@@ -76,18 +76,18 @@ const Statistics: React.FC<StatisticsProps> = () => {
 
     const bottomItems: ItemsProps[] = [
         {
-            count: <CountUp duration={6} start={0} end={5000} />,
+            count: <CountUp duration={6} separator="" decimals={0} start={0} end={5000} />,
             text: t("statisticTextFive"),
             degree: "м2",
             line: true
         },
         {
-            count: <CountUp duration={6} start={0} end={10000} />,
+            count: <CountUp duration={6} separator="" decimals={0} start={0} end={10000} />,
             text: t("statisticTextSix"),
             line: true
         },
         {
-            count: <CountUp duration={6} start={0} end={600000} />,
+            count: <CountUp duration={6} separator="" decimals={0} start={0} end={600000} />,
             text: t("statisticTextSeven"),
             degree: "кг",
             line: false
@@ -120,7 +120,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
                     {bottomItems.map(item => (
                         <div key={item.text} className={cls.item} style={{ borderRight: item.line ? "1.5px solid #cecece" : "none" }}>
                             <h1>{item.count} <span style={{ fontSize: 20 }}>{item.degree}</span></h1>
-                            <p>{item.text}</p>
+                            <p>{item.text.toUpperCase()}</p>
                         </div>
                     ))}
                 </div>

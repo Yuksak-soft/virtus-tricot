@@ -82,7 +82,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 targets: section1Ref.current,
                 translateX: '100%',
                 easing: 'linear',
-                duration: 35000,
+                duration: 20000,
                 // direction: 'alternate',
                 loop: true,
             });
@@ -93,7 +93,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                 targets: section2Ref.current,
                 translateX: '-100%',
                 easing: 'linear',
-                duration: 35000,
+                duration: 20000,
                 // direction: 'alternate',
                 loop: true,
             });
