@@ -25,12 +25,24 @@ body {
 
 .ant-select-selector {
     border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
 
+
+.ant-select-single .ant-select-selector {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .ant-select-selection-item {
     overflow: auto !important;
     text-overflow: inherit !important;
+    margin-left: 13px !important;
 }
 
 .ant-select-arrow {
