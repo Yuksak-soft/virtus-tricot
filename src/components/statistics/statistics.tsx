@@ -120,7 +120,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
                     {bottomItems.map(item => (
                         <div key={item.text} className={cls.item} style={{ borderRight: item.line ? "1.5px solid #cecece" : "none" }}>
                             <h1>{item.count} <span style={{ fontSize: 20 }}>{item.degree}</span></h1>
-                            <p>{item.text.toUpperCase()}</p>
+                            <p>{item.text}</p>
                         </div>
                     ))}
                 </div>

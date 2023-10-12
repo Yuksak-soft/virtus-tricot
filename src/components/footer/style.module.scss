@@ -8,6 +8,13 @@
   background-color: #1d1d1b;
   padding-top: 25px;
 
+  .locationLink {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+  }
+
   .socialIcons {
     display: none;
   }

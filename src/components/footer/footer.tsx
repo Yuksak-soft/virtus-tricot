@@ -17,10 +17,10 @@ const Footer: React.FC<FooterProps> = () => {
     return <div className={cls.wrapper}>
         <Image src="/footer-logo.svg" alt='logo' width={140} height={62} />
         <a className={cls.phoneNumber} href="tel: +998715007888">(71) 500-78-88</a>
-        <p>
+        <Link className={cls.locationLink} href="https://yandex.com/maps/org/53361172391/?ll=69.250939%2C41.256332&z=15.88">
             <Image src="/footer-location.svg" alt='location' width={20} height={20} />
-            {t("address")}
-        </p>
+            <p>{t("address")}</p>
+        </Link>
         <div className={cls.socialIcons}>
             <Link href="https://www.instagram.com/virtustricot.uz/">
                 <Image src="/instagram.png" alt='instagram' width={24} height={24} />
