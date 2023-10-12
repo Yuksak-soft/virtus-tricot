@@ -64,11 +64,11 @@ const Navbar: React.FC<NavbarProps> = () => {
                     <Select
                         defaultValue="ru"
                         className={cls.languageSelector}
-                        style={{ width: 70, }}
+                        style={{ width: 120, }}
                         onChange={handleChange}
                         options={[
-                            { value: 'uz', label: <span style={{ fontSize: 20 }}>🇺🇿</span> },
-                            { value: 'ru', label: <span style={{ fontSize: 20 }}>🇷🇺</span> },
+                            { value: 'uz', label: <span style={{ fontSize: 16 }}><span style={{ fontSize: 12 }}>UZ</span> 🇺🇿</span> },
+                            { value: 'ru', label: <span style={{ fontSize: 16 }}><span style={{ fontSize: 12 }}>RU</span> 🇷🇺</span> },
                         ]}
                     />
                     <Link style={{ textDecoration: "none" }} className={cls.mediaPhoneIcon} href="tel: +998715007888">

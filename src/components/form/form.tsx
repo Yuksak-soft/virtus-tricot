@@ -25,11 +25,10 @@ const Form: React.FC<FormProps> = () => {
             await axios.get(
                 `https://api.telegram.org/bot6425829985:AAHRoe4aR4g1WXU8PKSI56lcRMhDthmnr5c/sendMessage?chat_id=-1001687085192&text=${texts}`
             );
-            Swal.fire(
-                "Подтверждено",
-                "",
-                "success"
-            );
+            Swal.fire({
+                title: t("dialogText"),
+                icon: "success"
+            });
             setInputVal({ ...inputVal, name: "", phone: "" });
         } catch (err) {
             Swal.fire({

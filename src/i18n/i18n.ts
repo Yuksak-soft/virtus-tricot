@@ -1,8 +1,9 @@
 export const translationsUz = {
     bannerText: "Toshkentda sifatli to‘qimachilik aksessuarlar ishlab chiqarish va sotish",
-    formTitle: "Aloqa shakli",
+    formTitle: "Mutaxassislarimizdan maslahat olish uchun formani to'ldiring",
     name: "Ism",
     phoneNumber: "Telefon raqami",
+    dialogText: "Tez orada siz bilan bog'lanamiz",
     send: "Jo‘natish",
     mobie_send: "Biz bilan bog'laning",
     statisticTextOne: "Xorijiy malakali mutaxassislar",
@@ -36,6 +37,7 @@ export const translationsRu = {
     name: "Имя",
     phoneNumber: "Телефон номер",
     send: "Отправить",
+    dialogText: "Подтверждено",
     mobie_send: "Связаться",
     statisticTextOne: "Иностранных квалификацированных специалистов",
     statisticTextTwo: "Лет опыта в изготовлении текстильного аксессуара",
