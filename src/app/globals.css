@@ -32,3 +32,7 @@ body {
     overflow: auto !important;
     text-overflow: inherit !important;
 }
+
+.ant-select-arrow {
+    display: none !important;
+}
