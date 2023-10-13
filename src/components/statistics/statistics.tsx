@@ -100,7 +100,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
                 {
                     items.map(item => (
                         <div key={item.text} className={cls.item}>
-                            <h1>{item.count} <span style={{ fontSize: 20 }}>{item.degree}</span></h1>
+                            <h4>{item.count} <span style={{ fontSize: 14 }}>{item.degree}</span></h4>
                             <p>{item.text}</p>
                         </div>
                     ))
@@ -111,7 +111,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
                 <div className={cls.topItems}>
                     {topItems.map(item => (
                         <div key={item.text} className={cls.item} style={{ borderRight: item.line ? "1.5px solid #cecece" : "none" }}>
-                            <h1>{item.count} <span style={{ fontSize: 20 }}>{item.degree}</span></h1>
+                            <h4>{item.count} <span style={{ fontSize: 14 }}>{item.degree}</span></h4>
                             <p>{item.text}</p>
                         </div>
                     ))}
@@ -119,7 +119,7 @@ const Statistics: React.FC<StatisticsProps> = () => {
                 <div className={cls.bottomItems}>
                     {bottomItems.map(item => (
                         <div key={item.text} className={cls.item} style={{ borderRight: item.line ? "1.5px solid #cecece" : "none" }}>
-                            <h1>{item.count} <span style={{ fontSize: 20 }}>{item.degree}</span></h1>
+                            <h4>{item.count} <span style={{ fontSize: 14 }}>{item.degree}</span></h4>
                             <p>{item.text}</p>
                         </div>
                     ))}

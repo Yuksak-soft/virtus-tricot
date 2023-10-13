@@ -14,7 +14,7 @@ const Location: React.FC<LocationProps> = () => {
 
     return <div className={cls.wrapper}>
         <YMaps>
-            <Map style={{ width: "103vw", height: "400px" }} defaultState={defaultState}>
+            <Map style={{ width: "101vw", height: "400px" }} defaultState={defaultState}>
                 <Placemark geometry={[41.2555236, 69.2418187]} />
             </Map>
         </YMaps>

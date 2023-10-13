@@ -59,7 +59,7 @@ const bottomItems: ItemProps[] = [
     { image: "/36.jpg" },
     { image: "/37.jpg" },
     { image: "/38.jpg" },
-    { image: "/39.jpg" },
+    { image: "/21.jpg" },
     { image: "/40.jpg" },
     { image: "/46.jpg" },
     { image: "/47.jpg" },
@@ -81,9 +81,9 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         const animateSection1 = () => {
             anime({
                 targets: section1Ref.current,
-                translateX: '100%',
+                translateX: '350%',
                 easing: 'linear',
-                duration: 20000,
+                duration: 60000,
                 // direction: 'alternate',
                 loop: true,
             });
@@ -92,9 +92,9 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         const animateSection2 = () => {
             anime({
                 targets: section2Ref.current,
-                translateX: '-100%',
+                translateX: '-350%',
                 easing: 'linear',
-                duration: 20000,
+                duration: 60000,
                 // direction: 'alternate',
                 loop: true,
             });
@@ -102,16 +102,6 @@ const Portfolio: React.FC<PortfolioProps> = () => {
 
         animateSection1();
         animateSection2();
-
-        return () => {
-            anime({
-                targets: [section1Ref.current, section2Ref.current],
-                translateX: '0%',
-                duration: 0,
-            });
-            animateSection1();
-            animateSection2();
-        };
     }, []);
 
 
@@ -122,7 +112,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             <div ref={section1Ref} className={cls.section1}>
                 {topItems.map(item => (
                     <React.Fragment key={item.image}>
-                        <Image src={item.image} alt='item' width={400} height={200} />
+                        <Image src={item.image} alt='item' width={450} height={250} />
                         <div className={cls.line}></div>
                     </React.Fragment>
                 ))}
@@ -130,7 +120,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             <div ref={section2Ref} className={cls.section2}>
                 {bottomItems.map(item => (
                     <React.Fragment key={item.image}>
-                        <Image src={item.image} alt='item' width={400} height={200} />
+                        <Image src={item.image} alt='item' width={450} height={250} />
                         <div className={cls.line}></div>
                     </React.Fragment>
                 ))}
