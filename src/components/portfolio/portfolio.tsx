@@ -112,7 +112,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             <div ref={section1Ref} className={cls.section1}>
                 {topItems.map(item => (
                     <React.Fragment key={item.image}>
-                        <Image src={item.image} alt='item' width={450} height={250} />
+                        <Image src={item.image} alt='item' width={200} height={250} />
                         <div className={cls.line}></div>
                     </React.Fragment>
                 ))}
@@ -120,7 +120,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             <div ref={section2Ref} className={cls.section2}>
                 {bottomItems.map(item => (
                     <React.Fragment key={item.image}>
-                        <Image src={item.image} alt='item' width={450} height={250} />
+                        <Image src={item.image} alt='item' width={200} height={250} />
                         <div className={cls.line}></div>
                     </React.Fragment>
                 ))}
