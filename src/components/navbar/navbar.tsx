@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                             { value: 'ru', label: <span style={{ fontSize: 16 }}><span style={{ fontSize: 12 }}>RU</span> 🇷🇺</span> },
                         ]}
                     />
-                    <Link style={{ textDecoration: "none" }} className={cls.mediaPhoneIcon} href="tel: +998715007888">
+                    <Link style={{ textDecoration: "none" }} className={cls.mediaPhoneIcon} href="tel: +998555007888">
                         <FontAwesomeIcon icon={faPhone} width={18} height={18} />
                     </Link>
                 </div>
