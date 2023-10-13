@@ -75,10 +75,10 @@ const Navbar: React.FC<NavbarProps> = () => {
                         <FontAwesomeIcon icon={faPhone} width={18} height={18} />
                     </Link>
                 </div>
-                <Link style={{ textDecoration: "none" }} href="tel: +998715007888">
+                <Link style={{ textDecoration: "none" }} href="tel: +998555007888">
                     <button className={cls.navbarBtn}>
                         <Image src="/phone.svg" alt='phone' width={18} height={18} />
-                        (71) 500-78-88
+                        (55) 500-78-88
                     </button>
                 </Link>
             </div>
