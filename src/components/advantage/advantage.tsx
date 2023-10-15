@@ -12,7 +12,10 @@ const Advantage: React.FC<AdvantageProps> = () => {
 
     return (
         <div className={cls.wrapper}>
-            <h1>{t("advantages")}</h1>
+            <div className={cls.title}>
+                <h1>{t("advantages")}</h1>
+                <div className={cls.titleLine}></div>
+            </div>
             <div className={cls.advantages}>
                 <div className={cls.section}>
                     <div className={cls.item}>

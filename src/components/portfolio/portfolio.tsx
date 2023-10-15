@@ -106,7 +106,10 @@ const Portfolio: React.FC<PortfolioProps> = () => {
 
 
     return <div className={cls.wrapper}>
-        <h1>{t("portfolio")}</h1>
+        <div className={cls.title}>
+            <h1>{t("portfolio")}</h1>
+            <div className={cls.titleLine}></div>
+        </div>
         <div className={cls.centerLine}></div>
         <div className={cls.products}>
             <div ref={section1Ref} className={cls.section1}>
