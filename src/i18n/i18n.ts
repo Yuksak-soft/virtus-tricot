@@ -20,7 +20,7 @@ export const translationsUz = {
     advantage3: "Qulay narxlar",
     advantage4: "Biz asosan sovgʻalarsiz (otkat olmasdan ishlash) tizimida ishlaymiz",
     advantage5: "Malakali mutaxassislarning professional jamoasi",
-    advantage6: "Zo‘r sifat",
+    advantage6: "Ishonchli sifat",
     advantage7: "Qulay va tez yetkazib berish",
     advantage8: "Biz belgilangan muddatlarga rioya qilishni kafolatlaymiz",
     clients: "Bizga ishonadigan mijozlarimiz",
